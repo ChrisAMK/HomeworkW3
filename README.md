@@ -7,6 +7,7 @@ For this weeks homework we were required to create a Random Password Generator u
 I suspect my Code will look very different to others as i did this completely off the top of my head, i heard alot of people talking about using the Concat function but i used a different system where i made a variable called pSelection and depending on user input the pSelection was equal to whatever the user selected they want in their password. I set it up this way to ensure all ways possible user combinations can be achieved with IF statements.
 
 GitHub Repo Link : https://github.com/ChrisAMK/Password-Generator-Javascript
+
 GitHub Repo Clone Link : https://github.com/ChrisAMK/Password-Generator-Javascript.git
 
 
