@@ -5,7 +5,7 @@ document.getElementById("generate").addEventListener("click", function(){
 // Setting up the possible Characters
   var lowercaseAlphabetChar = ("abcdefghijklmnopqrstuvwxyz");
   var uppercaseAlphabetChar = ("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
-  var numericChar = (1234567890);
+  var numericChar = "1234567890";
   var specialChar = ("!@#$%^&*()?~/|:'><");
   var password = "";
   var pSelection = "";
@@ -14,15 +14,15 @@ document.getElementById("generate").addEventListener("click", function(){
   var length = prompt("How long is your Password? Choose between 8 and 128 Characters");
 
 // Making sure User Chooses between 8 and 128 Characters
-  if (length < 8 || length > 128){
-    alert("Length has to be Between 8 and 128. Please Try Again")
+  if (length < 8 || length > 128) {
+    alert("Length has to be Between 8 and 128. Please Try Again");
     return
   }
 
-  var wantsLower = confirm("Do you want Lowercase Characters?")
-  var wantsUpper = confirm("Do you want Uppercase Characters?")
-  var wantsNumbers = confirm("Do you want Numerical Characters?")
-  var wantsSpecial = confirm("Do you want Special Characters?")
+  var wantsLower = confirm("Do you want Lowercase Characters?");
+  var wantsUpper = confirm("Do you want Uppercase Characters?");
+  var wantsNumbers = confirm("Do you want Numerical Characters?");
+  var wantsSpecial = confirm("Do you want Special Characters?");
   
 //Verification Points System - I allocate a point when an option is confirmed. if no points are allocated, user has not selected anything
   var verify = 0;
@@ -45,7 +45,7 @@ document.getElementById("generate").addEventListener("click", function(){
 
 // IF STATEMENTS for User PreferenceLowerCase
   if (wantsLower && !wantsUpper && !wantsNumbers && !wantsSpecial) {
-    pSelection = lowercaseAlphabetChar
+    pSelection = lowercaseAlphabetChar;
     generatePWD();
   }
 // LowerCase and UpperCase
