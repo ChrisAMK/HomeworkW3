@@ -38,7 +38,7 @@ document.getElementById("generate").addEventListener("click", function(){
 
 // Script will exit if not verified, if verified we Proceed to Grouping Password to User Needs.
   function generatePWD() {
-    for (var i = 0; i <= length; i++) {
+    for (var i = 0; i < length; i++) {
       password = password + pSelection.charAt(Math.floor(Math.random() * Math.floor(pSelection.length - 1)));
     }
   }
